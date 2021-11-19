@@ -18,7 +18,19 @@ public class MenuTest {
         assertEquals(menuTest.menu.containsKey("salad"), true);
     }
 
-   
+    @Test public void testMenuFirstItemPrice() {
+        Menu menuTest = new Menu();
+        assertEquals(menuTest.menu.containsValue(10), true);
+    }
 
+    @Test public void testMenuSecondItemPrice() {
+        Menu menuTest = new Menu();
+        assertEquals(menuTest.menu.containsValue(8), true);
+    }
+
+    @Test public void testMenuThirdItemPrice() {
+        Menu menuTest = new Menu();
+        assertEquals(menuTest.menu.containsValue(5), true);
+    }
     
 }
